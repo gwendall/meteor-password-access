@@ -1,7 +1,7 @@
 Meteor Password Access
 ================
 
-Protects access to an app. Weak protection that just hides all templates before the password is correct. Depends on ```iron:router```.
+Protects access to an app by hiding all templates before the password is correct. Depends on ```iron:router```.
 
 Installation
 ------------

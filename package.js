@@ -9,10 +9,10 @@ Package.onUse(function(api, where) {
   api.use([
     "templating@1.0.7",
     "jquery@1.0.0",
-    "session",
+    "session@1.1.0",
     "iron:router@1.0.5",
     "frozeman:storage@0.1.8",
-    "reactive-var"
+    "reactive-var@1.0.5"
   ]);
 
   api.addFiles([
