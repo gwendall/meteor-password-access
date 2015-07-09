@@ -1,7 +1,7 @@
 Meteor Password Access
 ================
 
-Protect access to an app. Depends on ```iron:router```.
+Protects access to an app. Weak protection that just hides all templates before the password is correct. Depends on ```iron:router```.
 
 Installation
 ------------
@@ -13,7 +13,7 @@ meteor add gwendall:password-access
 Methods
 -------
 
-***Access.config (client)***   
+***Access.config (client)***
 
 ``` javascript
 Access.config({
