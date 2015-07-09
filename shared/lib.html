@@ -1,0 +1,51 @@
+<template name="passwordLayout">
+
+  {{#if accessGranted}}
+
+    {{> yield}}
+
+  {{else}}
+
+    {{> password_required}}
+
+  {{/if}}
+
+</template>
+
+<template name="password_required">
+
+  <div class="overflow-x-hidden overflow-y-scroll fill password-container">
+
+    <div class="flex flex-center p2 bg-cover bg-center relative fill">
+
+      <div class="container center z1">
+
+        <div class="block center p1 mt1 full-width">
+          {{#if accessJustGranted}}
+            <i class="fa fa-check bg-green white"></i>
+            <div class="h3">All set, well done.</div>
+          {{else}}
+            <i class="fa fa-lock bg-red white {{#if accessError}}animated shake{{/if}}"></i>
+            {{#if accessError}}
+              <div class="h3">Wrong password</div>
+            {{else}}
+              <div class="h3">This website is password protected</div>
+            {{/if}}
+          {{/if}}
+        </div>
+
+        <form class="relative flex" autocomplete="off" id="accessForm">
+          <!--
+          <label for="password" class="block center h4 mb2 bold">{{title}}</label>
+          -->
+          <input id="password" type="password" name="password" class="field-light m0 flex-1" autocomplete="off" placeholder="•••••">
+          <button class="button m0 ml1 flex-none">OK</button>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</template>

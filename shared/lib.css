@@ -1,0 +1,21 @@
+#accessForm {
+  /* margin-top: -100px; */
+}
+
+.password-container .fa {
+  display: table;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 6rem;
+  padding: 10px;
+  border-radius: 100px;
+  width: 130px;
+  height: 130px;
+  line-height: 6.8rem;
+}
+
+
+.password-container form {
+  width: 340px;
+  margin-top: 20px;
+}
