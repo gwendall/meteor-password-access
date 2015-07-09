@@ -1,7 +1,7 @@
 Meteor Password Access
 ================
 
-Protect access to an app
+Protect access to an app. Depends on ```iron:router```.
 
 Installation
 ------------
