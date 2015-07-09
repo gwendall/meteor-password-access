@@ -13,6 +13,8 @@ meteor add gwendall:password-access
 Methods
 -------
 
+***Access.config (client)***   
+
 ``` javascript
 Access.config({
   password: 'xxxx', // Password to enter
